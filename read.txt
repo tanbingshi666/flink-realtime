@@ -1,0 +1,15 @@
+1. com.tan.rt.dim.DimSinkApp
+
+2. com.tan.rt.dwd.BaseLogApp
+
+3. com.tan.rt.dwd.DwdTrafficUniqueVisitorDetail
+
+4. com.tan.rt.dwd.DwdTrafficUserJumpDetail
+
+5. com.tan.rt.dwd.DwdTradeCartAdd
+
+
+
+
+
+
