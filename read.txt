@@ -8,6 +8,32 @@
 
 5. com.tan.rt.dwd.DwdTradeCartAdd
 
+6. com.tan.rt.dwd.DwdTradeOrderPreProcess
+
+7. com.tan.rt.dwd.DwdTradeOrderDetail
+
+8. com.tan.rt.dwd.DwdTradeCancelOrderDetail
+
+9. com.tan.rt.dwd.DwdTradePayOrderDetailSuc
+
+10. com.tan.rt.dwd.DwdTradeOrderRefund
+
+11. com.tan.rt.dwd.DwdTradeRefundPaySuc
+
+12. com.tan.rt.dwd.DwdToolCouponGet
+
+13. com.tan.rt.dwd.DwdToolCouponOrder
+
+14. com.tan.rt.dwd.DwdToolCouponPay
+
+15. com.tan.rt.dwd.DwdInteractionFavorAdd
+
+16. com.tan.rt.dwd.DwdInteractionComment
+
+17. com.tan.rt.dwd.DwdUserRegister
+
+
+
 
 
 

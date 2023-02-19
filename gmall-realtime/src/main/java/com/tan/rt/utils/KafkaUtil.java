@@ -123,4 +123,20 @@ public class KafkaUtil {
                 ")";
     }
 
+    /**
+     * @param brokers kafka broker
+     * @param topic   kafka 主题
+     * @return 返回定义 upsert kafka ddl 语句
+     */
+    public static String getKafkaUpsertDDL(String brokers,
+                                           String topic) {
+        return " WITH ( " +
+                "  'connector' = 'upsert-kafka', " +
+                "  'topic' = '" + topic + "', " +
+                "  'properties.bootstrap.servers' = '" + brokers + "', " +
+                "  'key.format' = 'json', " +
+                "  'value.format' = 'json' " +
+                ")";
+    }
+
 }

@@ -8,6 +8,8 @@ import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.Duration;
+
 public class DwdTradeCartAdd {
 
     private static final Logger LOG = LoggerFactory.getLogger(DwdTradeCartAdd.class);
@@ -29,6 +31,7 @@ public class DwdTradeCartAdd {
         env.setParallelism(1);
 
         StreamTableEnvironment tableEnv = StreamTableEnvironment.create(env);
+        tableEnv.getConfig().setIdleStateRetention(Duration.ofSeconds(10L));
 
         tableEnv.executeSql(KafkaUtil.getTopicDb(BROKERS, GROUP_ID));
 
@@ -165,13 +168,6 @@ public class DwdTradeCartAdd {
 
         // {"id":"32358","user_id":"1199","sku_id":"5","cart_price":"999.0","sku_num":"1","sku_name":"Redmi 10X 4G Helio G85游戏芯 4800万超清四摄 5020mAh大电量 小孔全面屏 128GB大存储 4GB+128GB 明月灰 游戏智能手机 小米 红米","is_checked":null,"create_time":"2023-01-21 10:57:06","operate_time":null,"is_ordered":"0","order_time":null,"source_type_id":"2402","source_type_name":"商品推广","source_id":"13"}
         tableEnv.executeSql("insert into dwd_cart_add select * from cart_add_dic");
-
-        try {
-            env.execute("DwdTradeCartAdd Job");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
     }
 
 }
