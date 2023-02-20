@@ -32,6 +32,22 @@
 
 17. com.tan.rt.dwd.DwdUserRegister
 
+18. com.tan.rt.dws.DwsTrafficSourceKeywordPageViewWindow
+
+19. com.tan.rt.dws.DwsTrafficVcChArIsNewPageViewWindow
+
+20. com.tan.rt.dws.DwsTrafficPageViewWindow
+
+21. com.tan.rt.dws.DwsUserUserLoginWindow
+
+22. com.tan.rt.dws.DwsUserUserRegisterWindow
+
+23. com.tan.rt.dws.DwsTradeCartAddUuWindow
+
+24. com.tan.rt.dws.DwsTradePaymentSucWindow
+
+25. com.tan.rt.dws.DwsTradeOrderWindow
+
 
 
 
